@@ -1,0 +1,18 @@
+<html>
+
+<head>
+    {% load static %}
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+</head>
+
+<body>
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button>Login</button>
+    </form>
+     
+</body>
+
+</html>
